@@ -42,7 +42,6 @@ class Lesson(Base):
     tag = models.ManyToManyField("Tag")
 
 
-
 class Tag(models.Model):
     tag = models.CharField(max_length=100)
 
