@@ -138,12 +138,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'courses.User'
 
 
-REST_FRAMEWORK = {
-    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-    'PAGE_SIZE': 2,
-}
-
-
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
 ]
