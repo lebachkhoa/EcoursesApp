@@ -3,7 +3,7 @@ from django.contrib.auth.models import AbstractUser
 
 
 class User(AbstractUser):
-    avatar = models.ImageField(upload_to="upload/avatar/%Y/%M", null=True, blank=True)
+    avatar = models.ImageField(upload_to="upload/avatar/%Y/%M")
 
 
 class Base(models.Model):
@@ -47,6 +47,3 @@ class Tag(models.Model):
 
     def __str__(self):
         return self.tag
-    
-
-    
